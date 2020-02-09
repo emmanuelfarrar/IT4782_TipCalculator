@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F6FFF8"
     tools:context=".MainActivity">
 
     <!-- Left Side -->
@@ -74,8 +75,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="130dp"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="#FF4CAF50"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBaseline_toBaselineOf="@id/tvTotalLabel"
         app:layout_constraintStart_toEndOf="@id/tvTotalLabel"
         tools:text="150.00" />
@@ -84,9 +86,10 @@
         android:id="@+id/tvTotalTipAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/holo_green_dark"
+        android:textColor="#FF9800"
         android:textSize="24sp"
 
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/tvTotalTipLabel"
         app:layout_constraintStart_toStartOf="@+id/tvTotalBillAmount"
         tools:text="170.50" />
@@ -107,8 +110,8 @@
         android:layout_height="wrap_content"
         android:ems="8"
         android:inputType="numberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/etBillAmount"
         app:layout_constraintBaseline_toBaselineOf="@id/tvTipPercetangeLabel"
+        app:layout_constraintStart_toStartOf="@+id/etBillAmount"
         tools:layout_editor_absoluteY="159dp" />
 
     <Button
@@ -118,6 +121,7 @@
         android:layout_marginTop="100dp"
         android:background="#26C72A"
         android:text="Calculate"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTotalTipLabel" />
