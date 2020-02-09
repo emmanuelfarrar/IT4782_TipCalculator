@@ -57,6 +57,15 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /*Purpose of the calculateTotal()
+    The methods purpose is to do all calculations for the tip calculator.
+    As I developed the method I needed to add a means of dealing with the
+    edit text fields when they were empty, this resulted in the if statement.
+    Throughout the method there is a lot of casting from string to double and back,
+    as well as formatting so the output would show as 0.00. Finally, the function sets the
+    the textViews with the results of the calculations.
+
+     */
     private void calculateTotal() {
 
         //if statement to check if field is empty to prevent app from crashing
@@ -81,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         double bill = Double.parseDouble(billString);
         double tip = Double.parseDouble(tipString);
 
-        //formulas
+        //formulas for tipAmount and totalBill
         double tipAmount = bill * (tip/100);
         double totalBill = bill + tipAmount;
 
