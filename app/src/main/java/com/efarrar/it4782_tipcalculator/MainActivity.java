@@ -80,12 +80,6 @@ public class MainActivity extends AppCompatActivity {
         String tipString = etTipPercent.getText().toString();
         DecimalFormat df2 = new DecimalFormat("0.00");      //will use to format output.
 
-        /* First version to check if field is null or zero to prompt user
-        Decided to use .isEmpty() because app was still crashing.
-        if (billString == null || billString.length() == 0){
-            Toast.makeText(this, "Enter bill amount", Toast.LENGTH_SHORT).show();
-        }
-         */
         // convert billString into a double and tipString to Int
         double bill = Double.parseDouble(billString);
         double tip = Double.parseDouble(tipString);
